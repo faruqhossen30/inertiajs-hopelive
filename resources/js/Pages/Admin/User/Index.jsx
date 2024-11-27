@@ -48,6 +48,7 @@ const Index = () => {
                                         <TableHeader>S.N</TableHeader>
                                         <TableHeader>Photo</TableHeader>
                                         <TableHeader>Title</TableHeader>
+                                        <TableHeader>Role</TableHeader>
                                         <TableHeader>Status</TableHeader>
                                         <TableHeader>Action</TableHeader>
                                     </TableRow>
@@ -68,6 +69,7 @@ const Index = () => {
                                                 </div>
 
                                             </TableCell>
+                                            <TableCell className="font-medium">   <Badge color="lime">Active</Badge></TableCell>
                                             <TableCell className="text-zinc-500 flex items-center space-x-1">
                                                 {/* <Link href="" className="border p-1 rounded-md dark:border-gray-700 text-gray-500">
                                                     <CogIcon className="w-4 h-4" />

@@ -31,7 +31,7 @@ import {
 import { ChevronDownIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import { Link, usePage } from '@inertiajs/react'
 
-import { FaceSmileIcon, FolderOpenIcon, GiftIcon, GiftTopIcon, HomeIcon, MicrophoneIcon, PhotoIcon, UserGroupIcon, VideoCameraIcon } from '@heroicons/react/24/solid'
+import { CurrencyDollarIcon, FaceSmileIcon, FolderOpenIcon, GiftIcon, GiftTopIcon, HomeIcon, MicrophoneIcon, PhotoIcon, UserGroupIcon, VideoCameraIcon } from '@heroicons/react/24/solid'
 
 
 function classNames(...classes) {
@@ -45,11 +45,12 @@ const navigation = [
     { name: 'Audio Live', href: route('admin.audio.live'), icon: MicrophoneIcon, current: false },
     { name: 'Video Live', href: route('admin.video.live'), icon: VideoCameraIcon, current: false },
     { name: 'Gifts', href: route('gifts.index'), icon: GiftIcon, current: false },
+    { name: 'Transaction', href: route('transaction'), icon: CurrencyDollarIcon, current: false },
     // { name: 'Emoji', href: route('emojis.index'), icon: FaceSmileIcon, current: false },
     // { name: 'Wallpagers', href: route('wallpapers.index'), icon: FaceSmileIcon, current: false },
-    { name: 'Avatar', href: route('avatar.index'), icon: PhotoIcon, current: false },
+    { name: 'User Frame', href: route('avatar.index'), icon: PhotoIcon, current: false },
     { name: 'Entry frame', href: route('frame.index'), icon: FolderOpenIcon , current: false },
-    { name: 'Gift Animation', href: route('animation.index'), icon: GiftTopIcon, current: false },
+    { name: 'Animation Gift ', href: route('animation.index'), icon: GiftTopIcon, current: false },
     // {
     //     name: 'Admin',
     //     icon: UserGroupIcon,

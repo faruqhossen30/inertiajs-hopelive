@@ -9,7 +9,7 @@ use Inertia\Inertia;
 class VideoLiveController extends Controller
 {
    public function index()  {
-
-        return Inertia::render('Admin/Video/Index');
+    // return 1;
+    return Inertia::render('Admin/VideoLive/Index');
    }
 }

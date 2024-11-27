@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\GiftController;
 use App\Http\Controllers\Admin\HostController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\TopupController;
+use App\Http\Controllers\Admin\TransactionController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\VideoLiveController;
 use App\Http\Controllers\Admin\WallpeperController;
@@ -41,6 +42,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 
     Route::get('audio/live', [AudioLiveController::class, 'index'])->name('admin.audio.live');
     Route::get('video/live', [VideoLiveController::class, 'index'])->name('admin.video.live');
+    Route::get('transaction', [TransactionController::class, 'transaction'])->name('transaction');
 
 
     Route::get('user/{uid}', [UserController::class, 'show'])->name('admin.user.show');
